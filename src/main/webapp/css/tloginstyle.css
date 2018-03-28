@@ -1,0 +1,15 @@
+@charset "utf-8";
+*{font-size:12px; margin:0 auto; padding:0; text-decoration:none; list-style:none;}
+ul,ul li,dl,dl dt,dl dd{margin:0; padding:0;}
+html,body{height:100%;padding:0;margin:0;}
+img{ display:block;}
+a, iframe, input, select {outline: medium none;}
+body{ background:#0172b7; width:100%;}
+.sz_login{background:url(../img/bg_02.jpg) center top no-repeat;height:735px; width:100%;}
+.sz_login .admin_main{ width:327px; margin:0 auto;}
+.sz_login .admin_main .cont{ background:url(../img/table_09.jpg) no-repeat; width:327px; height:275px;}
+.sz_login .admin_main .cont table tr td h1{ font-family:"微软雅黑"; font-weight:normal; font-size:26px; color:#666666;}
+.sz_login .admin_main .cont table tr td .user_input{ width:240px; height:40px; border:none; line-height:40px; font-family:"微软雅黑"; font-size:14px; padding-left:40px; background:none;}
+.sz_login .admin_main .cont table tr td a{ padding-left:63px; color:#666666;}
+.sz_login .admin_main .cont table tr td a:hover{ padding-left:63px; color:#F00; text-decoration:underline}
+.sz_login .admin_main .cont table tr td .button{ width:240px; height:41px; background:none; border:none; cursor:pointer; font-family:"微软雅黑"; font-size:26px; color:#FFF;}

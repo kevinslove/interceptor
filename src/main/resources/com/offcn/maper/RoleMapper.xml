@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.offcn.dao.RoleMapper">
+  <resultMap id="BaseResultMap" type="com.offcn.po.Role">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="role_name" jdbcType="VARCHAR" property="roleName" />
+    <result column="role_sign" jdbcType="VARCHAR" property="roleSign" />
+    <result column="description" jdbcType="VARCHAR" property="description" />
+  </resultMap>  
+  <select id="findRoleList" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select 
+    r.*
+    from shiro.user u left join shiro.user_role u_r on u.id=u_r.user_id
+                      left join shiro.role r on u_r.role_id=r.id                      
+    where u.username = #{username,jdbcType=VARCHAR} 
+  </select> 
+</mapper>
